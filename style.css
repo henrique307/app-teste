@@ -1,0 +1,148 @@
+/*geral */
+
+*{
+    margin:0;
+}
+
+h1,h2,h3,h4,label {
+    color: white;
+}
+
+/*header*/
+
+.nav-item-a{
+    width: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item-a:hover {
+    color: rgb(152, 105, 228);
+}
+
+.banner{
+    height: 8vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    margin: auto 0;
+    cursor: default;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.login:hover {
+    cursor:pointer;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-item {
+    
+}
+
+.autenticacao {
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.login {
+    color: white;
+    background: none;
+    border: none;
+    width: 60px;
+}
+
+.cadastro-button {
+    color: white;
+    background-color: black;
+    border-color: white;
+    border-radius: 5px;
+    width: 140px;
+}
+
+/*fim header*/
+
+/*popUp*/
+
+.popUp{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 500px;
+    background-color: rgb(20, 20, 20);
+    z-index: 2;
+    transition: inherit;
+    padding: 10px 30px;
+}
+
+.popUp-titulo{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.popUp-login-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+
+.popUp-container{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 200ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+.popUp-input{
+    width: 250px;
+    padding: 7px 20px;
+}
+
+.popUp-info-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#buttonDiv {
+    margin-top: 30px;
+}
+
+/*fim popUp*/
+
+/*especiais*/
+
+.aparecido {
+    display: block;
+}
+
+.sumido {
+    display: none;
+}
+
+/*fim especiais*/

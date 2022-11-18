@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <header class="banner">
+        <h3 class="logo">Testing Field</h3>
+        <ul class="nav sumido">
+            <li class="nav-item"><a class="nav-item-a" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-item-a" href="/">Sobre</a></li>
+            <li class="nav-item"><a class="nav-item-a" href="/">Contatos</a></li>
+            <li class="nav-item"><a class="nav-item-a" href="/">Loja</a></li>
+        </ul>
+        <div class="autenticacao">
+            <button class="login">Login</button>
+            <button class="cadastro-button">cadastre-se</button>
+        </div>
+    </header>
+    <div class="popUp-container sumido"></div>
+    <section class="popUp popUp-login sumido">
+        <h1 class="popUp-titulo">Login</h1>
+        <div class="popUp-login-container">
+            <div class="popUp-info-container">
+                <label for="Email">Email</label>
+                <input class="popUp-input" name="Email" placeholder="Digite seu email aqui..." type="email"/>
+            </div>
+            <div class="popUp-info-container">
+                <label for="Email">Senha</label>
+                <input class="popUp-input" placeholder="Digite sua senha aqui..." type="password">
+            </div>
+            <div id="buttonDiv"></div>
+        </div>
+    </section>
+    <section class="popUp popUp-cadastro sumido">
+        <h1 class="popUp-titulo">Cadastro</h1>
+        <div class="popUp-login-container">
+            <div class="popUp-info-container">
+                <label for="Email">Email</label>
+                <input class="popUp-input" name="Email" placeholder="Digite seu email aqui..." type="email"/>
+            </div>
+            <div class="popUp-info-container">
+                <label for="Email">Senha</label>
+                <input class="popUp-input" placeholder="Digite sua senha aqui..." type="password">
+            </div>
+            <div id="buttonDiv"></div>
+        </div>
+    </section>
+    <script src="index.js" type="module"></script>
+    <script src="./functions/googleConfig.js"></script>
+</body>
+</html>
