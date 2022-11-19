@@ -11,21 +11,91 @@
 <body>
     <header class="banner">
         <h3 class="logo">Testing Field</h3>
-        <ul class="nav sumido">
-            <li class="nav-item"><a class="nav-item-a" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-item-a" href="/">Sobre</a></li>
-            <li class="nav-item"><a class="nav-item-a" href="/">Contatos</a></li>
-            <li class="nav-item"><a class="nav-item-a" href="/">Loja</a></li>
-        </ul>
         <div class="autenticacao">
             <button class="login">Login</button>
             <button class="cadastro-button">cadastre-se</button>
         </div>
     </header>
+    <main>
+        <nav class="nav">
+            <ul class="nav-body">
+                <li class="nav-item"><a class="nav-item-a" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-item-a" href="/">Sobre</a></li>
+                <li class="nav-item"><a class="nav-item-a" href="/">Contatos</a></li>
+                <li class="nav-item"><a class="nav-item-a" href="/">Loja</a></li>
+            </ul>
+        </nav>
+        <ul class="grid">
+            <li class="grid-item">
+                <div class="foto">foto</div>
+                <h3 class="nome">nome do jogo</h3>
+                <article class="descricao">
+                    desc
+                </article>
+            </li>
+            <li class="grid-item">
+                <div class="foto">foto</div>
+                <h3 class="nome">nome do jogo</h3>
+                <article class="descricao">
+                    desc
+                </article>
+            </li>
+            <li class="grid-item">
+                <div class="foto">foto</div>
+                <h3 class="nome">nome do jogo</h3>
+                <article class="descricao">
+                    desc
+                </article>
+            </li>
+            <li class="grid-item">
+                <div class="foto">foto</div>
+                <h3 class="nome">nome do jogo</h3>
+                <article class="descricao">
+                    desc
+                </article>
+            </li>
+            <li class="grid-item">
+                <div class="foto">foto</div>
+                <h3 class="nome">nome do jogo</h3>
+                <article class="descricao">
+                    desc
+                </article>
+            </li>
+            <li class="grid-item">
+                <div class="foto">foto</div>
+                <h3 class="nome">nome do jogo</h3>
+                <article class="descricao">
+                    desc
+                </article>
+            </li>
+            <li class="grid-item">
+                <div class="foto">foto</div>
+                <h3 class="nome">nome do jogo</h3>
+                <article class="descricao">
+                    desc
+                </article>
+            </li>
+            <li class="grid-item">
+                <div class="foto">foto</div>
+                <h3 class="nome">nome do jogo</h3>
+                <article class="descricao">
+                    desc
+                </article>
+            </li>
+            <li class="grid-item">
+                <div class="foto">foto</div>
+                <h3 class="nome">nome do jogo</h3>
+                <article class="descricao">
+                    desc
+                </article>
+            </li>
+            
+        </ul>
+    </main>
     <div class="popUp-container sumido"></div>
     <section class="popUp popUp-login sumido">
         <h1 class="popUp-titulo">Login</h1>
-        <div class="popUp-login-container">
+        <form class="popUp-login-container">
             <div class="popUp-info-container">
                 <label for="Email">Email</label>
                 <input class="popUp-input" name="Email" placeholder="Digite seu email aqui..." type="email"/>
@@ -35,11 +105,12 @@
                 <input class="popUp-input" placeholder="Digite sua senha aqui..." type="password">
             </div>
             <div id="buttonDiv"></div>
-        </div>
+            <button class="button-submit" type="submit">Enviar</button>
+        </form>
     </section>
     <section class="popUp popUp-cadastro sumido">
         <h1 class="popUp-titulo">Cadastro</h1>
-        <div class="popUp-login-container">
+        <form class="popUp-login-container">
             <div class="popUp-info-container">
                 <label for="Email">Email</label>
                 <input class="popUp-input" name="Email" placeholder="Digite seu email aqui..." type="email"/>
@@ -49,7 +120,8 @@
                 <input class="popUp-input" placeholder="Digite sua senha aqui..." type="password">
             </div>
             <div id="buttonDiv"></div>
-        </div>
+            <button class="button-submit" type="submit">Enviar</button>
+        </form>
     </section>
     <script src="index.js" type="module"></script>
     <script src="./functions/googleConfig.js"></script>

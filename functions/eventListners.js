@@ -1,12 +1,11 @@
-const $ = document.querySelector.bind(document);
+const $ = document.querySelectorAll.bind(document);
 
 export default function EventListners() {
 
-    $(".popUp-container").addEventListener('click', () => {
-        $(".popUp-container").classList
+    $(".popUp-container")[0].addEventListener('click', () => {
+        $(".popUp-container")[0].classList
             .add('sumido')
 
-        $(".popUp").classList
-            .add('sumido')
+        $(".popUp").forEach(item => item.classList.add('sumido'))
     })
 }

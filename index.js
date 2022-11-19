@@ -8,6 +8,8 @@ $(".login").addEventListener('click', () => Toggle(".popUp-login"))
 
 $(".cadastro-button").addEventListener('click', () => Toggle(".popUp-cadastro"))
 
+
+
 // popUpContainer.addEventListener('click', (e) => {
 //     popUpContainer
 //         .classList

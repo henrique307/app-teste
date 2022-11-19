@@ -8,7 +8,7 @@ window.onload = function () {
   });
   google.accounts.id.renderButton(
     document.getElementById("buttonDiv"),
-    { theme: "outline", size: "large" } // customization attributes
+    { theme: "dark", size: "large" } // customization attributes
   );
   google.accounts.id.prompt(); // also display the One Tap dialog
 };

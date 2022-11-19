@@ -2,6 +2,8 @@
 
 *{
     margin:0;
+    padding: 0;
+    --background-main: rgb(31,31,31);
 }
 
 h1,h2,h3,h4,label {
@@ -10,17 +12,9 @@ h1,h2,h3,h4,label {
 
 /*header*/
 
-.nav-item-a{
-    width: 20px;
-    text-decoration: none;
-    color: white;
-}
-
-.nav-item-a:hover {
-    color: rgb(152, 105, 228);
-}
-
 .banner{
+    position: fixed;
+    width: 100%;
     height: 8vh;
     color: white;
     background-color: black;
@@ -38,17 +32,6 @@ h1,h2,h3,h4,label {
 
 .login:hover {
     cursor:pointer;
-}
-
-.nav{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
-
-.nav-item {
-    
 }
 
 .autenticacao {
@@ -75,6 +58,81 @@ h1,h2,h3,h4,label {
 
 /*fim header*/
 
+/*main*/
+main {
+    width: 100%;
+    padding-top: 8vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-main);
+}
+
+.nav {
+    width: 80%;
+}
+
+.nav-body{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    margin-top: 50px;
+    background-color: black;
+}
+
+.nav-item-a{
+    padding: 9px 30px;
+    text-decoration: none;
+    color: white;
+    transition: 300ms ease-in-out;
+    font-weight: 600;
+}
+
+.nav-item-a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.grid {
+    margin-top: 30px;
+    list-style: none;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: repeat(200px);
+    row-gap: 50px;
+    width: 80%;
+}
+
+.grid-item {
+    color: white;
+}
+
+.foto {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(2, 85, 85);
+}
+
+.nome {
+    text-align: center;
+    height: 25px;
+    background-color: rgb(85, 2, 2);
+
+}
+
+.descricao {
+    text-align: center;
+    height: 100px;
+    background-color: rgb(21, 85, 2);
+
+}
+
+/*fim main*/
+
 /*popUp*/
 
 .popUp{
@@ -88,7 +146,7 @@ h1,h2,h3,h4,label {
     height: 500px;
     background-color: rgb(20, 20, 20);
     z-index: 2;
-    transition: inherit;
+    transition: 200ms ease-in-out;
     padding: 10px 30px;
 }
 
@@ -114,7 +172,6 @@ h1,h2,h3,h4,label {
     left: 0;
     bottom: 0;
     right: 0;
-    transition: 200ms ease-in-out;
     background-color: rgba(0, 0, 0, 0.582);
 }
 
@@ -133,6 +190,22 @@ h1,h2,h3,h4,label {
     margin-top: 30px;
 }
 
+.button-submit {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    transition: 200ms ease-in-out;
+}
+
+.button-submit:hover {
+    color: black;
+    background-color: white;
+}
+
 /*fim popUp*/
 
 /*especiais*/
@@ -146,3 +219,31 @@ h1,h2,h3,h4,label {
 }
 
 /*fim especiais*/
+
+/*tamanhos de tela diferentes*/
+@media (width < 300px) {
+    .grid{
+        grid-template-columns: 95%;
+    }
+}
+
+@media (300px < width < 500px) {
+    .grid{
+        grid-template-columns: 45% 45%;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 25%;
+    }
+}
+
+@media (500px < width < 800px) {
+    .grid{
+        grid-template-columns: 30% 30% 30%;
+    }
+}
+/*fim tamanhos de tela diferentes*/
